@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kn"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Khái niệm sự kiện trên di động" />
+    </group>
+    <item android:title="Các kiểu sự kiện">
+        <menu>
+            <item
+                android:id="@+id/nav_onclick"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="OnClick trên XML"/>
+            <item
+                android:id="@+id/nav_inline"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Hàm bắt sự kiện inline"/>
+            <item
+                android:id="@+id/nav_activity"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Activity nhận bắt sự kiện"/>
+            <item
+                android:id="@+id/nav_bbsk"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Biến bắt sự kiện"/>
+            <item
+                android:id="@+id/nav_lbsk"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Lớp bắt sự kiện tường minh"/>
+            <item
+                android:id="@+id/nav_view"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="View subclassing"/>
+        </menu>
+    </item>
+
+</menu>

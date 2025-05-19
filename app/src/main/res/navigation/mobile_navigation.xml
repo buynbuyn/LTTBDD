@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.chuong_4.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_kn"
+        android:name="com.example.chuong_4.ui.kn.knFragment"
+        android:label="Khái niệm sự kiện trên di động"
+        tools:layout="@layout/fragment_kn" />
+    <fragment
+        android:id="@+id/nav_onclick"
+        android:name="com.example.chuong_4.ui.onclick.onclickFragment"
+        android:label="OnClick trên XML"
+        tools:layout="@layout/fragment_onclick" />
+    <fragment
+        android:id="@+id/nav_inline"
+        android:name="com.example.chuong_4.ui.inline.inlineFragment"
+        android:label="Hàm bắt sự kiện inline"
+        tools:layout="@layout/fragment_inline" />
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.example.chuong_4.ui.activity.activityFragment"
+        android:label="Activity nhận bắt sự kiện"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/nav_bbsk"
+        android:name="com.example.chuong_4.ui.bbsk.bbskFragment"
+        android:label="Biến bắt sự kiện"
+        tools:layout="@layout/fragment_bbsk" />
+    <fragment
+        android:id="@+id/nav_lbsk"
+        android:name="com.example.chuong_4.ui.lbsk.lbskFragment"
+        android:label="Lớp bắt sự kiện tường minh"
+        tools:layout="@layout/fragment_lbsk" />
+    <fragment
+        android:id="@+id/nav_view"
+        android:name="com.example.chuong_4.ui.view.viewFragment"
+        android:label="View subclassing"
+        tools:layout="@layout/fragment_view" />
+</navigation>
