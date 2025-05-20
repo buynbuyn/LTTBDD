@@ -9,10 +9,14 @@ public class lbskViewModel extends ViewModel {
 
     public lbskViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("Welcome to lbsk Fragment!");
     }
 
     public LiveData<String> getText() {
         return mText;
+    }
+
+    public void setText(String text) {
+        mText.setValue(text);
     }
 }
