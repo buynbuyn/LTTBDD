@@ -8,6 +8,8 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="event_description">- Sự kiện giao diện người dùng là các hành động cần được giao diện người dùng hoặc ViewModel xử lý trong lớp giao diện người dùng.\nLoại sự kiện phổ biến nhất là sự kiện của người dùng. Người dùng tạo sự kiện của người dùng bằng cách tương tác với ứng dụng.\n- Loại sự kiện phổ biến nhất là sự kiện tương tác của người dùng, chẳng hạn như:\n+ Nhấn vào nút (tap/click),\n+ Kéo/thả (drag và drop),\n+ Cuộn màn hình (scroll),\n+ Cử chỉ (gesture),\n+ Nhập văn bản (text input).\nKhi người dùng thực hiện các hành động này, một sự kiện sẽ được tạo ra và trình xử lý sự kiện (event handler) – ví dụ như onClickListener() trong Android – sẽ nhận sự kiện đó và thực hiện phản hồi thích hợp.</string>
+
+
 </resources>
