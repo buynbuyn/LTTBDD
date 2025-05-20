@@ -1,6 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity bắt sự kiện"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity là một lớp cơ bản trong Android, đại diện cho một màn hình giao diện người dùng (UI). Mỗi Activity thường được liên kết với một layout XML và chịu trách nhiệm quản lý các tương tác của người dùng trên màn hình đó.
+\nVí dụ: Một Activity có thể chứa các nút (Button), ô nhập liệu (EditText), hoặc danh sách (RecyclerView)."
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity nhận và xử lý các sự kiện thông qua các cách sau:"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Sử dụng listener cho các view"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Các thành phần giao diện (View) như Button, EditText, v.v., có thể được gắn các Listener để bắt sự kiện. Activity sẽ chứa mã để xử lý các sự kiện này."
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Button"
+            android:id="@+id/btn_listener"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/activitysk1"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/activitysk2"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Xử lý sự kiện qua Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Định nghĩa phương thức xử lý sự kiện trực tiếp trong file XML và liên kết với Activity:"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_activityXml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấn tôi"
+            android:onClick="onButtonClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/activitysk3"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/activitysk4"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.Triển khai interface"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity có thể implement các interface như View.OnClickListener, View.OnTouchListener, v.v., để trực tiếp xử lý sự kiện:"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_interface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhấn tôi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/activitysk7"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/activitysk5"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/activitysk6"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.Sự kiện hệ thống"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity có thể nhận các sự kiện hệ thống như thay đổi cấu hình (xoay màn hình), thông báo từ Intent, hoặc BroadcastReceiver:"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_skht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/activitysk7"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/activitysk5"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/activitysk6"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

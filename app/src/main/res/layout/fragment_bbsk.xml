@@ -1,6 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biến bắt sự kiện"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textColor="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trong Android Studio, biến bắt sự kiện thường được hiểu là các cơ chế hoặc đối tượng được sử dụng để xử lý các sự kiện (events) do người dùng hoặc hệ thống kích hoạt, như nhấn nút, cuộn màn hình, nhập văn bản, v.v. Cụ thể, nó liên quan đến việc sử dụng Listener (bộ lắng nghe sự kiện) để bắt và xử lý các hành động này."
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Sử dụng biến listener trực tiếp"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:id="@+id/btn_listener"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/biensk2"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/biensk1"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Sử dụng biến listener dùng chung"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button1"
+            android:id="@+id/btn_listenerAll1"
+            android:backgroundTint="#F44336"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button2"
+            android:id="@+id/btn_listenerAll2"
+            android:backgroundTint="#03A9F4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button3"
+            android:id="@+id/btn_listenerAll3"
+            android:backgroundTint="#8BC34A"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/biensk3"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/biensk4"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/biensk5"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.Sử dụng biến tham chiếu phương thức"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button Phương Thức"
+            android:id="@+id/btn_phuongthuc"
+            android:backgroundTint="#03A9F4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xml"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/biensk8"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#F44336"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/biensk6"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/biensk7"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.Sử dụng với view binding"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:textColor="#F44336"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button View Binding 1"
+            android:id="@+id/btn_viewBinding1"
+            android:backgroundTint="#03A9F4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button View Binding 2"
+            android:id="@+id/btn_viewBinding2"
+            android:backgroundTint="#03A9F4"/>
+
+    </LinearLayout>
+
+</ScrollView>
